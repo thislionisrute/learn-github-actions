@@ -7,3 +7,17 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - run: echo "$GITHUB_ACTOR is executing a workflow" 
+  build: 
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v1
+        with:
+          name: website
+          path: _site
+  

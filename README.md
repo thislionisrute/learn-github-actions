@@ -75,6 +75,7 @@ This guide will help you create a workflow in your repository to demonstrate som
     If you're not familiar with Node.js and NPM, these commands just ensure that dependencies of this project are installed, and the `npm run build` command is triggers a custom script to build this project (a simple static website).
 10. Commit the changes to your `my-workflow.yml` file so far and push to GitHub.
     In a few moments, you should be able to see a new run in your repository's Actions tab that performs the additional steps defined.
+    Note on the workflow run page that the `info` and `build` jobs run in parallel. When you need to define dependencies between jobs, use the `needs` parameter in the job that depends on another.
     Troubleshoot any issues by looking at the logs and ensuring that the syntax of the workflow file is correct.
 11. Now that the project builds successfully, you need to store a copy of the built website so that it can be deployed (manually _or_ by another job or workflow). Add the following step to your `build` job:
     ```yml

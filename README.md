@@ -8,7 +8,8 @@
 1. You must have a GitHub account to follow this guide. Create one now if you do not have a GitHub account.
 2. Use the "Fork" button in the top right to copy this repository into your own account for modification.
 2. GitHub Actions uses the following structure for workflow files: Workflow > Job > Step > Action
-![GitHub Actions file structure](./assets/github-actions-file-structure.png). From [GitHub's template repo](https://github.com/skills/continuous-integration):
+![GitHub Actions file structure](./assets/github-actions-file-structure.png)
+From [GitHub's template repo](https://github.com/skills/continuous-integration):
 
    - **Workflow**: A workflow is a unit of automation from start to finish, including the definition of what triggers the automation, what environment or other aspects should be taken account during the automation, and what should happen as a result of the trigger.
    - **Job**: A job is a section of the workflow, and is made up of one or more steps. In this section of our workflow, the template defines the steps that make up the `build` job.

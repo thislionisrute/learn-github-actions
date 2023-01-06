@@ -1,0 +1,14 @@
+{
+  "name": "eleventy-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy"
+  },
+  "author": "Marc Denning (marc.denning@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
